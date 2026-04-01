@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4</title>
+    <style>
+        fieldset[name="fav_games"] option:nth-child(2n){
+            background-color: lightblue;
+        }
+        fieldset[name="fav_movies"] option:nth-child(3n+2){
+            background-color: lightblue;
+        }
+        datalist option:first-child,
+        datalist option:last-child{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset name="fav_games">
+            <legend>Favorite Games</legend>
+                <select name="fav_games" multiple size="5">
+                    <option value="Minecraft">Minecraft</option>
+                    <option value="HollowKnight">Hollow Knight</option>
+                    <option value="Spiritfarer">Spiritfarer</option>
+                    <option value="Astroneer">Astroneer</option>
+                    <option value="StardewValley">Stardew Valley</option>
+                    <option value="KingdomNewLands">Kingdom: New Lands</option> 
+                    <option value="TheForest">The Forest</option>
+                    <option value="CookieRun">Cookie Run</option>
+                </select>
+            </fieldset>
+        <fieldset name="fav_movies">
+            <legend>Favorite Movies</legend>
+                <select name="fav_movies" multiple size="5">
+                    <option value="TheWalkingDead">The Walking Dead</option>
+                    <option value="DoctorHouse">Doctor House</option>
+                    <option value="Dexter">Dexter</option>
+                    <option value="DoctorWho">Doctor Who</option>
+                    <option value="GameOfThrones">Game of Thrones</option>
+                    <option value="MyPoliceman">My Policeman</option>
+                    <option value="ASingleMan">A Single Man</option>
+                    <option value="Cruella">Cruella</option>
+                    <option value="TheDevilWearsPrada">The Devil Wears Prada</option>
+                    <option value="Attack On Titan">Attack On Titan</option>
+                    <option value="MyHeroAcademia">My Hero Academia</option>
+                    <option value="FullmetalAlchemist">Fullmetal Alchemist</option>
+                    <option value="FairyTail">Fairy Tail</option>
+                    <option value="Erased">Erased</option>
+                    <option value="Classmates">Classmates</option>
+                </select>
+        </fieldset>
+        <fieldset name="fav_subjects">
+            <legend>Favorite Subjects</legend>
+                <input type="text" name="subject" list="subjects" placeholder="Choose a subject">
+                <datalist id="subjects">
+                    <option value="DataBases" label="Working with SQL and DB architecture">
+                    <option value="Software Modelling" label="Creating UML diagrams and software design before coding">
+                    <option value="Software Architecture" label="Designing software systems and components using architectural programming patterns">
+                    <option value="UI/UX Design" label="Designing user interfaces and experiences">
+                    <option value="English language" label="Learning English for better communication and career opportunities">
+                </datalist>
+        </fieldset>
+    </form>
+</body>
+</html>
