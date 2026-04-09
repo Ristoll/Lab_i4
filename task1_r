@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lab4</title>
+
+<style>
+    .games li:nth-child(2n){ background: lightblue; }
+    .movies li:nth-child(3n+2){ background: lightblue; }
+    .subjects li:first-child,
+    .subjects li:last-child{ background: lightblue; }
+</style>
+</head>
+
+<body>
+
+<h2>Favorite Games</h2>
+<ul class="games">
+    <li>Minecraft</li>
+    <li>Hollow Knight</li>
+    <li>Spiritfarer</li>
+    <li>Astroneer</li>
+    <li>Stardew Valley</li>
+    <li>Kingdom: New Lands</li>
+    <li>The Forest</li>
+    <li>Cookie Run</li>
+</ul>
+
+<h2>Favorite Movies</h2>
+<ul class="movies">
+    <li>The Walking Dead</li>
+    <li>Doctor House</li>
+    <li>Dexter</li>
+    <li>Doctor Who</li>
+    <li>Game of Thrones</li>
+    <li>My Policeman</li>
+    <li>A Single Man</li>
+    <li>Cruella</li>
+    <li>The Devil Wears Prada</li>
+    <li>Attack On Titan</li>
+    <li>My Hero Academia</li>
+    <li>Fullmetal Alchemist</li>
+    <li>Fairy Tail</li>
+    <li>Erased</li>
+    <li>Classmates</li>
+</ul>
+
+<h2>Favorite Subjects</h2>
+<ul class="subjects">
+    <li>DataBases - Working with SQL and DB architecture</li>
+    <li>Software Modelling - Creating UML diagrams</li>
+    <li>Software Architecture - Designing systems</li>
+    <li>UI/UX Design - Designing interfaces</li>
+    <li>English language - Career communication</li>
+</ul>
+
+</body>
+</html>
