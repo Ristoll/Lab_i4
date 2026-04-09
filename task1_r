@@ -7,8 +7,14 @@
 <style>
     .games li:nth-child(2n){ background: lightblue; }
     .movies li:nth-child(3n+2){ background: lightblue; }
-    .subjects li:first-child,
-    .subjects li:last-child{ background: lightblue; }
+    .subjects dt:first-of-type,
+    .subjects dt:first-of-type + dd {
+        background: lightblue;
+    }
+    .subjects dt:last-of-type,
+    .subjects dt:last-of-type + dd {
+        background: lightblue;
+    }
 </style>
 </head>
 
@@ -27,7 +33,7 @@
 </ul>
 
 <h2>Favorite Movies</h2>
-<ul class="movies">
+<ol class="movies">
     <li>The Walking Dead</li>
     <li>Doctor House</li>
     <li>Dexter</li>
@@ -43,16 +49,21 @@
     <li>Fairy Tail</li>
     <li>Erased</li>
     <li>Classmates</li>
-</ul>
+</ol>
 
 <h2>Favorite Subjects</h2>
-<ul class="subjects">
-    <li>DataBases - Working with SQL and DB architecture</li>
-    <li>Software Modelling - Creating UML diagrams</li>
-    <li>Software Architecture - Designing systems</li>
-    <li>UI/UX Design - Designing interfaces</li>
-    <li>English language - Career communication</li>
-</ul>
+<dl class="subjects">
+    <dt>DataBases</dt>
+    <dd>Working with SQL and DB architecture</dd>
+    <dt>Software Modelling</dt>
+    <dd>Creating UML diagrams</dd>
+    <dt>Software Architecture</dt>
+    <dd>Designing systems</dd>
+    <dt>UI/UX Design</dt>
+    <dd>Designing interfaces</dd>
+    <dt>English language</dt>
+    <dd>Career communication</dd>
+</dl>
 
 </body>
 </html>
